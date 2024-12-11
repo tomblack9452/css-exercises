@@ -1,0 +1,14 @@
+/* Both elements share this initial class selector*/
+.black,
+.yellow {
+  font-size: 28px;
+  font-family: "Helvetica", "Times New Roman", sans-serif;
+}
+/* These class selectors expand on the styling from the element selector above for the individual buttons */
+.black {
+  color: #fff;
+  background-color: #000;
+}
+.yellow {
+  background-color: #ffff00;
+}
