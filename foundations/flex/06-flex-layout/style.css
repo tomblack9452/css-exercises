@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 12px;
 }
 
 input {
@@ -23,4 +26,61 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  margin: 16px;
+}
+
+/* Top header links */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+}
+
+.header ul,
+a {
+  padding: 0;
+  color: #666;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header a:hover {
+  color: #999;
+}
+
+/* Main content - logo + search + buttons */
+
+.content {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer links */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.footer ul,
+a {
+  padding: 0;
+  color: #666;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer a:hover {
+  color: #999;
 }
